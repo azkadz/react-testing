@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
   "hostRequirements": {
     "cpus": 4
   },
@@ -23,4 +23,19 @@
     }
   },
   "forwardPorts": [3000]
+  ,
+
+   // Add the IDs of extensions (Copilot) you want installed when the container is created.
+ "customizations": {
+  "vscode": {
+      "extensions": [
+          "GitHub.copilot"
+      ]
+  },
+  "codespaces": {
+      "openFiles": [
+          "codespace.md"
+      ]
+  }
+}
 }
